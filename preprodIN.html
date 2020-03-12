@@ -43,7 +43,7 @@
         }
     </style>
 
-    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript' src='https://preprod-jlr.cs88.force.com/liveagent/resource/snapin'></script>
     <script type='text/javascript'>
         var initESW = function (gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //Or false
@@ -86,7 +86,7 @@
 
         if (!window.embedded_svc) {
             var s = document.createElement('script');
-            s.setAttribute('src', 'https://cxp--preprod.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+            s.setAttribute('src', 'https://preprod-jlr.cs88.force.com/liveagent/resource/snapin');
             s.onload = function () {
                 initESW(null);
             };
