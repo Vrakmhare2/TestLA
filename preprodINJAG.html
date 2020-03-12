@@ -4,28 +4,31 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
         name="viewport" />
 
-    <link href="https://jlr.secure.force.com/liveagent/resource/LiveAgentLightningStatic/dist/css/LR/normalize.css"
+    <link href="https://jlr.secure.force.com/liveagent/resource/LiveAgentStatic1/dist/css/JAG/normalize.css"
         rel="stylesheet" />
-    <link href="https://jlr.secure.force.com/liveagent/resource/LiveAgentLightningStatic/dist/css/LR/webfonts.css"
+    <link href="https://jlr.secure.force.com/liveagent/resource/LiveAgentStatic1/dist/css/JAG/webfonts.css"
         rel="stylesheet" />
 
-    <link href="https://jlr.secure.force.com/liveagent/resource/LiveAgentLightningStatic/dist/css/LR/main.css"
+    <link href="https://jlr.secure.force.com/liveagent/resource/LiveAgentStatic1/dist/css/JAG/main.css"
         rel="stylesheet" />
     <style type='text/css'>
         .embeddedServiceHelpButton .helpButton .uiButton {
-            background-color: #005a2b;
-            font-family: "Landrover", sans-serif;
+            background-color: #9e1b32;
+            font-family: "JLR Proxima Nova", sans-serif;
             font-size: 18px;
             position: relative;
             right: 10px;
-            bottom: 100%;
-            height: 70px;
-            width: 130px;
+                bottom: 100%;
+                height: 70px;
+                width: 130px;
         }
-
         .embeddedServiceHelpButton .helpButton .uiButton:focus {
-            outline: 1px solid #005a2b;
+            outline: 1px solid #9e1b32;
         }
+          .helpButtonDisabled{
+        display: none !important;
+    }
+    
     </style>
     <style type='text/css'>
         .embeddedServiceHelpButton .helpButton .uiButton {
@@ -42,7 +45,7 @@
         }
     </style>
 
-    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript' src='https://jlr.secure.force.com/liveagent/resource/snapin'></script>
     <script type='text/javascript'>
         var initESW = function (gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //Or false
@@ -85,7 +88,7 @@
 
         if (!window.embedded_svc) {
             var s = document.createElement('script');
-            s.setAttribute('src', 'https://cxp--preprod.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+            s.setAttribute('src', 'https://jlr.secure.force.com/liveagent/resource/snapin');
             s.onload = function () {
                 initESW(null);
             };
